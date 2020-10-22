@@ -66,16 +66,16 @@ export default defineConfig({
       component: './layout',
       routes: [
         {
+          path: '/',
+          redirect: '/list',
+        },
+        {
           name: 'list.table-list',
           icon: 'table',
           path: '/list',
           component: './ListTableList',
         },
       ],
-    },
-    {
-      path: '/',
-      redirect: '/welcome',
     },
     {
       component: './404',
